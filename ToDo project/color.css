@@ -1,0 +1,405 @@
+/* body{margin: 0%;
+    padding: 0%;
+   
+   .bg{background-image: url(Untitled\ design.png);
+   width: 99vw;
+   height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: max(1400px , 100vw)
+}
+} */
+
+
+body{
+margin: 0px;
+padding: 0px;
+
+    /* background : url(Untitled\ design.png); */
+    background : url(todobg3.png);
+    /* background : url(todopng9696.png); */
+    /* background-color: #27374d; */
+    background-size: 105vw 110vh;
+    position: relative;
+    top: 0px;
+}
+
+@media screen and (max-width:1200px) {
+    body{
+        margin: auto;
+        padding: 0px;
+    background : url(todobg3.png);
+    /* background : url(Untitled\ design.png); */
+    background-size: 148vw 92vh;
+    position: relative;
+    top: 0px;
+    }
+    
+}
+
+
+
+#todomanage{
+    position: relative;
+    display: flex;
+    width: 25vw;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    left: 70vw;
+    top: 20vh;
+}
+
+@media screen and (max-width:1200px) {
+    .task_type{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        bottom: 40vh;
+    }
+    
+}
+
+#typetask{
+    width: 15vw;
+    height: 3vh;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1200px) {
+
+    #typetask{
+        width: 30vw;
+        position: relative;
+        bottom: 17vh;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        left: -32vw;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+
+    .clic_add_button{
+        position: relative;
+        bottom: 17vh;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        left: -30vw;
+    }
+    
+}
+
+#click_add{
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px ;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#click_add:hover{
+    background-color: #27374D;
+    color: white;
+}
+
+.title{
+    position: relative;
+    margin-left: 28vw;
+    margin-top: 9vh;
+    font-size: 35px;
+    font-family: "Fredericka the Great", serif;
+  font-weight: 500;
+    
+                                                
+                                                                                                
+                                                
+}
+/* .heading{
+    display: flex;
+}
+
+.current_date{
+    position: relative;
+    width: 7vw;
+    height: 2vh;
+    padding: 2px;
+    background-color: pink;
+    top: 10vh;
+    left: 15vw;
+} */
+
+.todolist{
+    width: 25vw;
+    position: relative;
+    grid-template-rows: 4ch 6vh 6vh 6vh 6vh 6vh 6vh;
+    grid-template-columns: 20vw 20vw;
+    display: grid;
+    left: 7vw;
+    margin-top: 2.3vh;
+
+}
+
+/* .firsttask{
+    position: relative;
+    list-style:decimal ;
+    gap: 3vh;
+    display: flex;
+    flex-direction: column;
+} */
+
+.firsttask{
+    position: relative;
+    list-style:circle ;
+    gap: 3vh;
+    display: grid;
+    grid-template-rows: 2.9vh 2.9vh 2.9vh 2.9vh 2.9vh 2.9vh 2.9vh;
+    grid-template-columns:20vw;
+    
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    width: 55vw;
+    font-size: 18px;
+    font-family: 'Gowun Dodum', sans-serif;
+    text-transform: capitalize;
+   
+    
+                                                
+}
+.task li{
+    flex: 3;
+}
+
+.task button{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 25px;
+}
+
+.button_position{
+    display:flex ;
+    flex-direction: row;
+
+}
+
+
+.checktask{
+    background-image: url(icons8-tick-30.png);
+    background-size: 17px;
+    cursor: pointer;
+    background-position: center;
+    position: relative;
+}
+/* .checktask:hover{
+    background-color: rgb(63, 242, 14);
+    border: 1px solid rgb(38, 241, 31);
+    border-radius: 2px;
+} */
+
+.firstboxdone{
+    background-color: rgb(0, 255, 38);
+   border: 1px solid rgb(0, 255, 38);
+   border-radius: 3px;
+}
+.color_task02{
+    font-size: 18px;
+    text-decoration:line-through;
+    
+    background-color: rgb(47, 255, 82);
+    
+}
+.color_task03{
+    font-size: 18px;
+    text-decoration:dashed;
+    
+}
+.color_task02{
+    background-image: url(icons8-tick-3000.png);
+    background-size: 25px;
+    cursor: pointer;
+    background-position: center;
+    border: 1px solid rgb(246, 251, 246);
+    
+}
+
+
+/* .delete_task{
+    background-image: url(icons8-delete-30.png);
+    background-size: 20px;
+    cursor: pointer;
+    background-position: center;
+    
+} */
+
+
+.deletetask{
+    background-image: url(icons8-delete-24.png);
+    background-position: center;
+    background-size: 17px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 0.25px solid black;
+}
+.deletetask:hover{
+    background-color: red;
+    border: 1px solid red;
+
+}
+
+.quotes{
+    position: relative;
+    left: 65vw;
+    top: 15vh;
+    opacity: 75%;
+}
+
+
+#List_of_task_todo{
+
+    position: relative;
+    display: grid;
+    grid-template-columns: 35vw;
+    row-gap: 13px;
+}
+
+.checkbox{
+
+    width: 5px;
+    height: 15px;
+}
+/* 
+.tasks_of_the_day{
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 35px;
+    width: 50vw;
+} */
+
+#check_task{
+
+list-style-type: circle;
+text-transform: capitalize;
+font-family: "Itim", cursive;
+font-weight: 400;
+font-size: 18px;
+color: #101357
+/* color:#150734 */
+/* color:#01345B */
+}
+
+.tasks_of_the_day{
+   
+    
+    position: relative;
+    display: grid;
+    grid-template-columns: 27vw 15vw 5vw 5vw;
+    grid-template-rows: 4vh;
+}
+
+@media screen and (max-width:1200px) {
+
+    .tasks_of_the_day{
+        grid-template-columns: 51vw 0vw 7vw 3vw;
+        display: grid;
+        width: 45vw;
+        position: relative;
+        left: -15px;
+    }
+    
+}
+
+#complete_button{
+    width: 20px;
+    height: 20px;
+}
+
+#complete_button:hover{
+background-color: #B0D9B1;
+
+}
+#delete_button:hover{
+    background-color: red;
+}
+
+
+/* @media screen and (max-width:1200px) {
+
+    #delete_button{
+
+     width: 70px;  
+
+    }
+    
+} */
+
+
+#buttons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.task_completed{
+
+}
+
+/* .checkbox_of_task{
+
+
+} */
+
+.checkboxes{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox_of_task{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.checkbox_of_task:hover{
+    background-color: #F9F5F6;
+   
+}
+
+.deletebox_of_task{
+    width: 55px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.deletebox_of_task:hover{
+    background-color: red;
+    
+}
+.task_completed{
+
+    background-image: url(icons/icons8-tick-3000.png);
+    background-position: center;
+    border: 0px;
+}
+#add_task_for_new_day{
+    position: relative;
+    left: 55vw;
+    bottom: 15vh;
+}
